@@ -211,13 +211,14 @@ function dothis() {
     if (error) {
       console.log('ERROR: Reading random.txt -- ' + error);
       return;
-    } else {
+    } 
+    else {
       // Split out the command name and the parameter name
       var commandString = data.split(',');
-      var command = commandString[0].trim();
+      var commandLiri = commandString[0].trim();
       var param = commandString[1].trim();
 
-      switch(command) {
+      switch(commandLiri) {
         case 'my-tweets':
           tweethis(); 
           break;
